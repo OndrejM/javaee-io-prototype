@@ -1,0 +1,41 @@
+<template name="main">
+<div class="app-body ng-scope">
+  <eeio-header class="home ng-scope ng-isolate-scope">
+    <div>
+      <div class="background"></div>
+        <div class="head">
+          <a href="."><img src="/images/logo.png"></a>
+            <ul>
+            <li><a href=".">Specs</a></li>
+            <li><a href="contributors">Contributors</a></li>
+          </ul>
+        </div>
+        <div class="title">
+          <div ng-transclude="ng-transclude">
+            <h1 class="ng-scope">Curabitur ullamcorper in arcu in hendrerit</h1>
+            <p class="ng-scope">Duis aliquam arcu sed felis congue aliquet. Maecenas ullamcorper lacus bibendum vulputate interdum.</p>
+          </div>
+        </div>
+      </div>
+    </eeio-header>
+    <div class="page-body home ng-scope">
+      <eeio-projects-shortlist class="ng-isolate-scope">
+        <div><!-- ngRepeat: project in projects -->
+          <a href="project/jcpevangelists/javaee.samples/README.md" class="ng-scope" ng-repeat="project in projects" ng-href="project/jcpevangelists/javaee.samples/README.md">
+            <h1 class="ng-binding">JavaEE Samples</h1>
+            <p class="ng-binding">A set of examples from github.</p>
+          </a><!-- end ngRepeat: project in projects -->
+        </div>
+      </eeio-projects-shortlist>
+    </div>
+    <eeio-footer class="ng-scope ng-isolate-scope">
+      <div>
+        <a href="."><img src="/images/logo.png"></a>
+        <ul>
+          <li><a href=".">Specs</a></li>
+          <li><a href="contributors">Contributors</a></li>
+        </ul>
+      </div>
+    </eeio-footer>
+  </div>
+</template>

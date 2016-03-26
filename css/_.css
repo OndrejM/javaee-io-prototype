@@ -1,0 +1,389 @@
+* {
+	font-family:"open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color:#676a6c
+}
+html {
+	box-sizing:border-box
+}
+*,*:before,*:after {
+	box-sizing:inherit
+}
+div.app-loading {
+	width:100%;
+	height:100%;
+	background:url("/images/loading.gif") center no-repeat
+}
+eeio-header>div {
+	width:100%;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	position:relative;
+	overflow:hidden
+}
+eeio-header>div>div.background {
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background:url(/images/header_home.jpg) no-repeat center center;
+	background-size:cover;
+	z-index:-1
+}
+eeio-header>div>div.title {
+	min-height:300px;
+	-webkit-box-flex:1;
+	-webkit-flex-grow:1;
+	-ms-flex-positive:1;
+	flex-grow:1;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center;
+	padding:0 80px 40px 80px
+}
+@media (max-width: 550px) {
+	eeio-header>div>div.title {
+		padding:0 20px 20px 20px
+	}
+}
+eeio-header>div>div.title * {
+	color:#e6e6e6;
+	font-weight:100
+}
+eeio-header>div>div.head {
+	-webkit-flex-shrink:0;
+	-ms-flex-negative:0;
+	flex-shrink:0;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:justify;
+	-webkit-justify-content:space-between;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding:40px
+}
+@media (max-width: 550px) {
+	eeio-header>div>div.head {
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-webkit-flex-direction:column;
+		-ms-flex-direction:column;
+		flex-direction:column;
+		-webkit-box-pack:center;
+		-webkit-justify-content:center;
+		-ms-flex-pack:center;
+		justify-content:center;
+		padding:0
+	}
+}
+eeio-header>div>div.head>a>img {
+	width:250px;
+	height:auto
+}
+eeio-header>div>div.head>ul {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+eeio-header>div>div.head>ul>li {
+	display:inline;
+	margin-left:10px
+}
+eeio-header>div>div.head>ul>li>a {
+	text-transform:uppercase;
+	font-size:13px;
+	color:#e6e6e6
+}
+eeio-header.home div[ng-transclude]>* {
+	margin:0
+}
+eeio-header.home div[ng-transclude]>p {
+	margin-top:5px
+}
+eeio-header.contributors .background {
+	background-image:url(/images/header_contributors.jpg)
+}
+eeio-header.project .background {
+	background-image:url(/images/header_project.jpg)
+}
+eeio-footer>div {
+	width:100%;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-pack:justify;
+	-webkit-justify-content:space-between;
+	-ms-flex-pack:justify;
+	justify-content:space-between;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+	padding:10px 40px;
+	background-color:#18191B
+}
+@media (max-width: 550px) {
+	eeio-footer>div {
+		padding:10px
+	}
+}
+eeio-footer>div>a>img {
+	width:130px;
+	height:auto
+}
+eeio-footer>div>ul {
+	list-style:none;
+	margin:0;
+	padding:0
+}
+eeio-footer>div>ul>li {
+	display:inline;
+	margin-left:10px
+}
+eeio-footer>div>ul>li>a {
+	text-transform:uppercase;
+	font-size:13px
+}
+eeio-contributor-summary>a>img {
+	width:35px;
+	height:auto
+}
+eeio-project-name-description>div {
+	padding:5px
+}
+eeio-project-name-description>div>* {
+	margin:0
+}
+eeio-project-name-description>div>p {
+	margin-top:5px
+}
+eeio-project-doc>div {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:reverse;
+	-webkit-flex-direction:row-reverse;
+	-ms-flex-direction:row-reverse;
+	flex-direction:row-reverse
+}
+@media (max-width: 900px) {
+	eeio-project-doc>div {
+		-webkit-box-orient:vertical;
+		-webkit-box-direction:normal;
+		-webkit-flex-direction:column;
+		-ms-flex-direction:column;
+		flex-direction:column
+	}
+}
+eeio-project-doc>div>div.side-bar {
+	width:320px;
+	-webkit-flex-shrink:0;
+	-ms-flex-negative:0;
+	flex-shrink:0;
+	margin-left:40px
+}
+@media (max-width: 900px) {
+	eeio-project-doc>div>div.side-bar {
+		width:100%
+	}
+}
+@media (max-width: 900px) {
+	eeio-project-doc>div>div.side-bar {
+		margin-left:0
+	}
+}
+eeio-project-doc>div>div.side-bar * {
+	font-size:15px;
+	font-weight:100
+}
+eeio-project-doc>div>div.side-bar>div {
+	margin:0 0 40px
+}
+eeio-project-doc>div>div.side-bar>div * {
+	margin:0;
+	padding:0
+}
+eeio-project-doc>div>div.side-bar>div.resources>div,eeio-project-doc>div>div.side-bar>div.related>div {
+	background-color:#ffffff;
+	padding:10px;
+	margin-top:10px
+}
+eeio-project-doc>div>div.side-bar>div.resources>div>p,eeio-project-doc>div>div.side-bar>div.related>div>p {
+	overflow:hidden;
+	text-overflow:ellipsis;
+	margin-bottom:5px
+}
+@media (max-width: 900px) {
+	eeio-project-doc>div>div.side-bar>div.contributors>div {
+		display:-webkit-box;
+		display:-webkit-flex;
+		display:-ms-flexbox;
+		display:flex;
+		-webkit-flex-wrap:wrap;
+		-ms-flex-wrap:wrap;
+		flex-wrap:wrap
+	}
+}
+eeio-project-doc>div>div.side-bar>div.contributors img {
+	margin:2px
+}
+@media (max-width: 900px) {
+	eeio-project-doc>div>div.side-bar>div.contributors img {
+		margin:2px 4px 2px 0
+	}
+}
+eeio-project-doc>div>div.side-bar>div.contributors>h1 {
+	margin:0 2px 10px 2px
+}
+eeio-project-doc>div>div.content {
+	background-color:#ffffff;
+	padding:40px;
+	-webkit-box-flex:1;
+	-webkit-flex-grow:1;
+	-ms-flex-positive:1;
+	flex-grow:1;
+	overflow:auto
+}
+eeio-project-doc>div>div.content a {
+	color:#FA991C
+}
+eeio-project-doc>div>div.content pre {
+	margin:0;
+	padding:20px;
+	background-color:#f1f4f6
+}
+eeio-projects-shortlist>div {
+	padding:10px
+}
+eeio-projects-shortlist>div * {
+	margin:0;
+	padding:0;
+	font-weight:100
+}
+eeio-projects-shortlist>div>a[ng-repeat="project in projects"] {
+	display:block;
+	border-bottom:solid black 1px;
+	padding-bottom:40px;
+	margin-bottom:40px
+}
+eeio-contributors-list>div {
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-flex-wrap:wrap;
+	-ms-flex-wrap:wrap;
+	flex-wrap:wrap;
+	-webkit-box-pack:center;
+	-webkit-justify-content:center;
+	-ms-flex-pack:center;
+	justify-content:center
+}
+eeio-contributors-list>div>a {
+	-webkit-flex-shrink:0;
+	-ms-flex-negative:0;
+	flex-shrink:0;
+	display:block;
+	text-decoration:none;
+	width:200px;
+	margin:40px 0 0 40px;
+	overflow:hidden;
+	background-color:#ffffff
+}
+eeio-contributors-list>div>a>img {
+	width:100%;
+	height:auto
+}
+eeio-contributors-list>div>a>div {
+	padding:15px
+}
+eeio-contributors-list>div>a>div * {
+	font-weight:200
+}
+eeio-contributors-list>div>a>div>h1,eeio-contributors-list>div>a>div>h2 {
+	margin:0
+}
+eeio-contributors-list>div>a>div>h1,eeio-contributors-list>div>a>div>h2.company {
+	text-transform:uppercase
+}
+eeio-contributors-list>div>a>div>h1 {
+	font-size:14px
+}
+eeio-contributors-list>div>a>div>h2 {
+	font-size:10px
+}
+eeio-contributors-list>div>a>div>h2.company {
+	font-size:12px;
+	color:#FA991C
+}
+a {
+	text-decoration:none
+}
+a:hover {
+	color:#FA991C !important
+}
+body {
+	background-color:#f1f4f6;
+}
+body>div[ng-view] {
+	min-height:100%;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-box-align:stretch;
+	-webkit-align-items:stretch;
+	-ms-flex-align:stretch;
+	align-items:stretch
+}
+body>div[ng-view]>div.page-body {
+	-webkit-box-flex:1;
+	-webkit-flex-grow:1;
+	-ms-flex-positive:1;
+	flex-grow:1;
+	padding:40px
+}
+@media (max-width: 550px) {
+	body>div[ng-view]>div.page-body {
+		padding:40px 5px
+	}
+}
+body>div[ng-view]>div.page-body.home {
+	background-color:#ffffff
+}
+body>div[ng-view]>div.page-body.contributors>h1,body>div[ng-view]>div.page-body.contributors>h2 {
+	margin:0;
+	font-weight:100;
+	text-align:center
+}
