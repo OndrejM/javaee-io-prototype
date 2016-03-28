@@ -161,10 +161,17 @@ eeio-footer>div>ul {
 	padding:0
 }
 eeio-footer>div>ul>li {
-	display:inline;
-	margin-left:10px
+	display:inline-block;
+  vertical-align: top;
+	margin-left:3em;
 }
-eeio-footer>div>ul>li>a {
+eeio-footer>div>ul>li>ul {
+  padding: 0;
+}
+eeio-footer>div>ul>li>ul>li {
+  list-style: none;
+}
+eeio-footer>div>ul>li>h1 {
 	text-transform:uppercase;
 	font-size:13px
 }
@@ -278,7 +285,9 @@ eeio-project-doc>div>div.content pre {
 	padding:20px;
 	background-color:#f1f4f6
 }
-eeio-projects-shortlist>div {
+eeio-projects-shortlist>div,
+eeio-projects-shortlist>h1,
+eeio-projects-shortlist>dl {
 	padding:10px
 }
 eeio-projects-shortlist>div * {

@@ -1,7 +1,45 @@
 <template name="main">
-  <div id="render-target-main">
+  <div id="render-target" class="app-body ng-scope">
+    <script type="text/javascript">
+      render.main();
+    </script>
+    <!-- static content, will be overwritten by javascript on page load -->
+    <eeio-header class="home ng-scope ng-isolate-scope">
+      <div>
+        <div class="background"></div>
+        <div class="head">
+          <a href="."><img src="/images/logo.png"/></a>
+          <ul>
+            <li><a href=".">Specs</a></li>
+            <li><a href="contributors">Contributors</a></li>
+          </ul>
+        </div>
+        <div class="title">
+          <div >
+            <h1 class="ng-scope">Curabitur ullamcorper in arcu in hendrerit</h1>
+            <p class="ng-scope">Duis aliquam arcu sed felis congue aliquet. Maecenas ullamcorper lacus bibendum vulputate interdum.</p>
+          </div>
+        </div>
+      </div>
+    </eeio-header>
+    <div class="page-body home ng-scope">
+      <eeio-projects-shortlist class="ng-isolate-scope">
+        <div>
+          <a href="project/jcpevangelists/javaee.samples/README.md" class="ng-scope">
+            <h1 class="ng-binding">JavaEE Samples</h1>
+            <p class="ng-binding">A set of examples from github.</p>
+          </a>
+        </div>
+      </eeio-projects-shortlist>
+    </div>
+    <eeio-footer class="ng-scope ng-isolate-scope">
+      <div>
+        <a href="."><img src="/images/logo.png"/></a>
+        <ul>
+          <li><a href=".">Specs</a></li>
+          <li><a href="contributors">Contributors</a></li>
+        </ul>
+      </div>
+    </eeio-footer>
   </div>
-  <script type="text/javascript">
-    Main.run();
-  </script>
 </template>
