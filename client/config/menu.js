@@ -10,19 +10,19 @@ var javaEEMenu = [
     },
     {
       label: "Download",  // Java EE SDK, Glassfish, links to certified servers, links to other projects with downloadables (Forge)
-      href:  "."
+      href:  "tobedone"
     },
     {
       label: "Tools", // ecosystem like Forge, IDE support, Maven plugins, Projects like Deltaspike, Arquillian, Omnifaces, Primefaces, SnoopEE, KumuluzEE, ...
-      href:  "."
+      href:  "tobedone"
     },
     {
       label: "Community",  // JCP, mailing lists (the Guardians mailing list)..., podcasts (vJUG, Enterprise Java Newscast), events, blogs/articles, video presentations, conferences, java magazine, slack, stackoverflow questions...
-      href:  "."
+      href:  "tobedone"
     },
     {
       label: "Java EE 8",  // pointers to latest efforts with Java EE 8 (Glassfish 5 and JSRs in development, the Guardians mailing list, https://javaee8.zeef.com/arjan.tijms)
-      href:  "."
+      href:  "tobedone"
     }
   ];
 
@@ -30,7 +30,7 @@ config.menu = {
   items : javaEEMenu.slice().concat([
     {
       label: "About",
-      href:  "."  // contributors, mission statement, Java EE general materials
+      href:  "tobedone"  // contributors, mission statement, Java EE general materials
     }
   ])
 };
@@ -47,7 +47,7 @@ config.footer = {
         subItems: [
           {
             label: "JavaEE.io", // mission statement
-            href: "."
+            href: "tobedone"
           },
           {
             label: "Contributors",
@@ -64,15 +64,15 @@ config.footer = {
         subItems: [
           {
             label: "JavaEE spec mailing list",
-            href: "."
+            href: "tobedone"
           },
           {
             label: "JavaEE Guardians mailing list",
-            href: "."
+            href: "tobedone"
           },
           {
             label: "JavaEE Guardians on Twitter",
-            href: "."
+            href: "tobedone"
           },
           {
             label: "JavaEE specs on Github",

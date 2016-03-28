@@ -5,3 +5,4 @@ Router.route('/', function () {
 Router.route('/learn');
 Router.route('/documentation');
 Router.route('/contributors');
+Router.route('/tobedone');
